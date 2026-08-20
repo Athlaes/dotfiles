@@ -1,0 +1,69 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "colorize_brackets": true,
+  "inlay_hints": {
+    "enabled": true
+  },
+  "minimap": {
+    "show": "always"
+  },
+  "edit_predictions": {
+    "mode": "subtle"
+  },
+  "show_edit_predictions": true,
+  "cli_default_open_behavior": "existing_window",
+  "diff_view_style": "split",
+  "proxy": "",
+  "project_panel": {
+    "dock": "left"
+  },
+  "outline_panel": {
+    "dock": "left"
+  },
+  "collaboration_panel": {
+    "dock": "left"
+  },
+  "agent": {
+    "auto_compact": {
+      "threshold": "90%"
+    },
+    "default_profile": "ask",
+    "default_model": {
+      "provider": "openai-subscribed",
+      "model": "gpt-5.6-sol",
+      "enable_thinking": true,
+      "effort": "medium"
+    },
+    "dock": "right",
+    "sidebar_side": "right",
+    "favorite_models": [],
+    "model_parameters": []
+  },
+  "status_bar": {
+    "line_endings_button": true
+  },
+  "git_panel": {
+    "dock": "left",
+    "tree_view": true
+  },
+  "agent_servers": {
+    "codex-acp": {
+      "type": "registry"
+    }
+  },
+  "icon_theme": "Material Icon Theme",
+  "ui_font_size": 16,
+  "buffer_font_size": 15,
+  "theme": {
+    "mode": "dark",
+    "light": "Gruvbox Light",
+    "dark": "Catppuccin Frappé",
+  },
+}

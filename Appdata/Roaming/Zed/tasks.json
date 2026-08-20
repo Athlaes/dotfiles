@@ -1,0 +1,29 @@
+[
+  {
+    "label": "Run $ZED_CUSTOM_java_class_name",
+    "command": "if (Test-Path 'pom.xml') { mvn clean compile exec:java '-Dexec.mainClass=$ZED_CUSTOM_java_package_name.$ZED_CUSTOM_java_class_name' } elseif ( Test-Path 'gradlew' ) { ./gradlew run '-PmainClass=$ZED_CUSTOM_java_package_name.$ZED_CUSTOM_java_class_name' } else { echo 'No build system found'}",
+    "use_new_terminal": false,
+    "reveal": "always",
+    "tags": ["java-main"]
+  },
+  {
+    "label": "Test $ZED_CUSTOM_java_class_name.$ZED_CUSTOM_java_method_name",
+    "command": "if (Test-Path 'pom.xml') { mvn clean test '-Dtest=$ZED_CUSTOM_java_package_name.$ZED_CUSTOM_java_class_name#$ZED_CUSTOM_java_method_name' } elseif ( Test-Path 'gradlew' ) { ./gradlew test --tests '$ZED_CUSTOM_java_package_name.$ZED_CUSTOM_java_class_name.ZED_CUSTOM_java_method_name' } else { echo 'No build system found'}",
+    "use_new_terminal": false,
+    "reveal": "always",
+    "tags": ["java-test-method"]
+  },
+  {
+    "label": "Test class $ZED_CUSTOM_java_class_name",
+    "command": "if (Test-Path 'pom.xml') { mvn clean compile test '-Dtest=$ZED_CUSTOM_java_package_name.$ZED_CUSTOM_java_class_name' } elseif ( Test-Path 'gradlew' ) { ./gradlew test --test '$ZED_CUSTOM_java_package_name.$ZED_CUSTOM_java_class_name' } else { echo 'No build system found'}",
+    "use_new_terminal": false,
+    "reveal": "always",
+    "tags": ["java-test-class"]
+  },
+  {
+    "label": "Run tests",
+    "command": "if (Test-Path 'pom.xml') { mvn clean test } elseif ( Test-Path 'gradlew' ) { ./gradlew test } else { echo 'No build system found'}",
+    "use_new_terminal": false,
+    "reveal": "always"
+  }
+]
