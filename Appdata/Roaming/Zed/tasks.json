@@ -34,9 +34,9 @@
     "tags": ["java-clear-cache"],
   },
   {
-    "label": "Check out $ZED_GIT_REF",
+    "label": "Check out commit $ZED_GIT_SHA_SHORT",
     "command": "git",
-    "args": ["checkout", "$ZED_GIT_REF"],
+    "args": ["checkout", "$ZED_GIT_SHA"],
     "tags": ["git-command"],
   },
 ]
