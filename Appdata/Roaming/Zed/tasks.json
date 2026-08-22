@@ -7,11 +7,10 @@
     "tags": ["java-main"],
   },
   {
-    "label": "Test $ZED_CUSTOM_java_class_name.$ZED_CUSTOM_java_method_name",
-    "command": "if (Test-Path 'pom.xml') { mvn clean test '-Dtest=$ZED_CUSTOM_java_package_name.$ZED_CUSTOM_java_class_name#$ZED_CUSTOM_java_method_name' } elseif ( Test-Path 'gradlew' ) { ./gradlew test --tests '$ZED_CUSTOM_java_package_name.$ZED_CUSTOM_java_class_name.ZED_CUSTOM_java_method_name' } else { echo 'No build system found'}",
+    "label": "Run tests",
+    "command": "if (Test-Path 'pom.xml') { mvn clean test } elseif ( Test-Path 'gradlew' ) { ./gradlew test } else { echo 'No build system found'}",
     "use_new_terminal": false,
     "reveal": "always",
-    "tags": ["java-test-method"],
   },
   {
     "label": "Test class $ZED_CUSTOM_java_class_name",
@@ -21,8 +20,17 @@
     "tags": ["java-test-class"],
   },
   {
-    "label": "Run tests",
-    "command": "if (Test-Path 'pom.xml') { mvn clean test } elseif ( Test-Path 'gradlew' ) { ./gradlew test } else { echo 'No build system found'}",
+    "label": "Test $ZED_CUSTOM_java_class_name.$ZED_CUSTOM_java_method_name",
+    "command": "if (Test-Path 'pom.xml') { mvn clean test '-Dtest=$ZED_CUSTOM_java_package_name.$ZED_CUSTOM_java_class_name#$ZED_CUSTOM_java_method_name' } elseif ( Test-Path 'gradlew' ) { ./gradlew test --tests '$ZED_CUSTOM_java_package_name.$ZED_CUSTOM_java_class_name.ZED_CUSTOM_java_method_name' } else { echo 'No build system found'}",
+    "use_new_terminal": false,
+    "reveal": "always",
+    "tags": ["java-test-method"],
+  },
+  {
+    "label": "Debug maven $ZED_CUSTOM_java_class_name.$ZED_CUSTOM_java_method_name",
+    "command": "if (Test-Path 'pom.xml') { mvn clean test '-Dtest=$ZED_CUSTOM_java_package_name.$ZED_CUSTOM_java_class_name#$ZED_CUSTOM_java_method_name' '-Dmaven.surefire.debug' } elseif ( Test-Path 'gradlew' ) { ./gradlew test --tests '$ZED_CUSTOM_java_package_name.$ZED_CUSTOM_java_class_name.ZED_CUSTOM_java_method_name' --debug-jvm } else { echo 'No build system found'}",
+    "cwd": "$ZED_WORKTREE_ROOT",
+    "tags": ["java-test-method"],
     "use_new_terminal": false,
     "reveal": "always",
   },
