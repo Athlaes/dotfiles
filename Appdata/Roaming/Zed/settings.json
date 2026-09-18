@@ -7,59 +7,67 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "git": {
+    "diff_base": "head",
+  },
   "colorize_brackets": true,
   "inlay_hints": {
-    "enabled": true
+    "enabled": true,
   },
   "minimap": {
-    "show": "always"
+    "show": "always",
   },
   "edit_predictions": {
-    "mode": "subtle"
+    "mode": "subtle",
   },
   "show_edit_predictions": true,
   "cli_default_open_behavior": "existing_window",
   "diff_view_style": "split",
   "proxy": "",
   "project_panel": {
-    "dock": "left"
+    "dock": "left",
   },
   "outline_panel": {
-    "dock": "left"
+    "dock": "left",
   },
   "collaboration_panel": {
-    "dock": "left"
+    "dock": "left",
   },
   "agent": {
+    "inline_assistant_model": {
+      "provider": "openai-subscribed",
+      "model": "gpt-6-astra",
+      "enable_thinking": false,
+    },
     "sandbox_permissions": {
-      "warn_ntfs_grants": true
+      "warn_ntfs_grants": true,
     },
     "auto_compact": {
-      "threshold": "90%"
+      "threshold": "90%",
     },
     "default_profile": "ask",
     "default_model": {
       "provider": "openai-subscribed",
       "model": "gpt-5.6-sol",
       "enable_thinking": true,
-      "effort": "low"
+      "effort": "low",
     },
     "dock": "right",
     "sidebar_side": "right",
     "favorite_models": [],
-    "model_parameters": []
+    "model_parameters": [],
   },
   "status_bar": {
-    "line_endings_button": true
+    "line_endings_button": true,
   },
   "git_panel": {
     "dock": "left",
-    "tree_view": true
+    "tree_view": true,
   },
   "agent_servers": {
     "codex-acp": {
-      "type": "registry"
-    }
+      "type": "registry",
+    },
   },
   "icon_theme": "Material Icon Theme",
   "ui_font_size": 16,
@@ -68,5 +76,8 @@
     "mode": "dark",
     "light": "Gruvbox Light",
     "dark": "Catppuccin Frappé",
+  },
+  "lsp": {
+    "rust-analyzer": {},
   },
 }
