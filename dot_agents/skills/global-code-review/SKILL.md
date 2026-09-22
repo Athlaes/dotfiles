@@ -2,7 +2,8 @@
 name: global-code-review
 description: >-
   Review code changes, branches, pull requests, commits, or selected files in any
-  programming language. Define the shared review scope, validation rules,
+  programming language, including performance optimization and code readability.
+  Define the shared review scope, validation rules,
   severity levels, and findings format. Use when a code review is requested;
   combine with a language-specific review skill when applicable.
 ---
@@ -27,6 +28,28 @@ remains.
 - API and message contracts, including serialization and backward compatibility.
 - Test coverage for changed behavior, failure paths, and edge cases.
 - Maintainability issues with a concrete impact on correctness or future changes.
+- Performance optimization opportunities with a concrete impact on runtime,
+  memory, I/O, or scalability.
+- Code readability: naming, control flow, responsibility boundaries, duplication,
+  and abstractions that affect comprehension and safe maintenance.
+
+### Optimization and Readability
+
+- Look for avoidable repeated work, inefficient algorithms or data structures,
+  redundant database or network calls, and unnecessary allocations in relevant
+  execution paths. Explain the workload or input size that makes the cost matter.
+- Support performance findings with code evidence, complexity analysis, or
+  measurements when available. Do not claim measured gains without benchmarks;
+  distinguish expected improvements from verified results.
+- Identify unclear intent, misleading names, excessive nesting, oversized
+  functions, duplicated business logic, and unnecessary indirection when they
+  make behavior harder to understand or change. Respect repository conventions
+  and avoid findings based solely on formatting or personal taste.
+- Suggest the smallest behavior-preserving simplification and explain its
+  concrete benefit. Consider readability and maintenance costs when recommending
+  an optimization; avoid speculative micro-optimizations.
+- Keep optional optimization and readability suggestions separate from defects,
+  and assign severity according to demonstrated impact.
 
 ### Review Boundaries
 
