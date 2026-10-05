@@ -34,6 +34,9 @@
     "dock": "left",
   },
   "agent": {
+    "threads_sidebar": {
+      "position": "right"
+    },
     "inline_assistant_model": {
       "provider": "openai-subscribed",
       "model": "gpt-6-astra",
@@ -53,7 +56,6 @@
       "effort": "low",
     },
     "dock": "right",
-    "sidebar_side": "right",
     "favorite_models": [],
     "model_parameters": [],
   },
