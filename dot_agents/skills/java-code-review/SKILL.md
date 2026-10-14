@@ -9,9 +9,7 @@ description: >-
 
 # Java Code Review
 
-Read [global-code-review](../global-code-review/SKILL.md) for the shared scope,
-workflow, severity levels, and findings format. If it has already been read
-during this review, reuse those instructions.
+Read [global-code-review](../global-code-review/SKILL.md) for the shared scope, workflow, severity levels, and findings format. If it has already been read during this review, reuse those instructions.
 
 Apply the following checks only to relevant Java changes.
 
@@ -25,3 +23,6 @@ Apply the following checks only to relevant Java changes.
 - Catch blocks must not both log an error and throw an exception, except when
   the error is genuinely generic (`Exception` or `RuntimeException`).
 - DAO services must not call other DAO services.
+- Do not write unit tests for private methods.
+- Avoid unit tests for methods with no business logic, such as those that only pass data through.
+- Prefer integration tests over unit tests. Keep unit tests for logic with many conditional branches or edge cases.

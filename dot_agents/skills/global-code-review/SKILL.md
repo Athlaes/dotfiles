@@ -62,6 +62,10 @@ Apply language-specific guidance only to the relevant code. For Java changes,
 also read [java-code-review](../java-code-review/SKILL.md). Do not apply that
 skill to non-Java applications.
 
+For frontend JavaScript or TypeScript changes, also read
+[javascript-front-code-review](../javascript-front-code-review/SKILL.md).
+Do not apply that skill to backend-only JavaScript.
+
 ## Review Workflow
 
 - Inspect the requested changes and relevant repository instructions.
