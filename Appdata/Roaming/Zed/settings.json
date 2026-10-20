@@ -80,6 +80,20 @@
     "dark": "Catppuccin Frappé",
   },
   "lsp": {
+    "jdtls": {
+      "settings": {
+        "lombok_support": true,
+      },
+      "initialization_options": {
+        "settings": {
+          "java": {
+            "configuration": {
+              "updateBuildConfiguration": "automatic",
+            },
+          },
+        },
+      },
+    },
     "rust-analyzer": {},
   },
 }
