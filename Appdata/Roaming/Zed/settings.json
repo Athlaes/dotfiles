@@ -35,7 +35,7 @@
   },
   "agent": {
     "threads_sidebar": {
-      "position": "right"
+      "position": "right",
     },
     "inline_assistant_model": {
       "provider": "openai-subscribed",
@@ -80,6 +80,15 @@
     "dark": "Catppuccin Frappé",
   },
   "lsp": {
+    "vtsls": {
+      "settings": {
+        "typescript": {
+          "preferences": {
+            "includePackageJsonAutoImports": "on",
+          },
+        },
+      },
+    },
     "jdtls": {
       "settings": {
         "lombok_support": true,
