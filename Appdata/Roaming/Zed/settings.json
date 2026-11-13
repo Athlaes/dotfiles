@@ -82,7 +82,15 @@
   "lsp": {
     "vtsls": {
       "settings": {
+        "javascript": {
+          "updateImportsOnFileMove": {
+            "enabled": "always"
+          }
+        },
         "typescript": {
+          "updateImportsOnFileMove": {
+            "enabled": "always"
+          },
           "preferences": {
             "includePackageJsonAutoImports": "on",
           },
