@@ -79,17 +79,36 @@
     "light": "Gruvbox Light",
     "dark": "Catppuccin Frappé",
   },
+  "auto_install_extensions": {
+    "angular": true,
+    "cargo-appraiser": true,
+    "catppuccin": true,
+    "dockerfile": true,
+    "emmet": true,
+    "github-actions": true,
+    "gitlab-ci-ls": true,
+    "html": true,
+    "java": true,
+    "just": true,
+    "material-icon-theme": true,
+    "powershell": true,
+    "scss": true,
+    "sql": true,
+    "tombi": true,
+    "toml": true,
+    "xml": true,
+  },
   "lsp": {
     "vtsls": {
       "settings": {
         "javascript": {
           "updateImportsOnFileMove": {
-            "enabled": "always"
-          }
+            "enabled": "always",
+          },
         },
         "typescript": {
           "updateImportsOnFileMove": {
-            "enabled": "always"
+            "enabled": "always",
           },
           "preferences": {
             "includePackageJsonAutoImports": "on",
