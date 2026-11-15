@@ -87,6 +87,7 @@
     "emmet": true,
     "github-actions": true,
     "gitlab-ci-ls": true,
+    "npm-package-json-checker-lsp": true,
     "html": true,
     "java": true,
     "just": true,
@@ -157,6 +158,7 @@
   },
   "languages": {
     "Angular": {
+      "enable_language_server": true,
       "language_servers": ["angular", "emmet-language-server", "..."],
       "formatter": "prettier",
       "prettier": {
@@ -165,9 +167,11 @@
       },
     },
     "HTML": {
+      "enable_language_server": true,
       "language_servers": ["angular", "emmet-language-server", "..."],
     },
     "TypeScript": {
+      "enable_language_server": true,
       "language_servers": ["angular", "..."],
     },
   },
