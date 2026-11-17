@@ -87,7 +87,7 @@
     "emmet": true,
     "github-actions": true,
     "gitlab-ci-ls": true,
-    "npm-package-json-checker-lsp": true,
+    "npm-package-json-checker": true,
     "html": true,
     "java": true,
     "just": true,
